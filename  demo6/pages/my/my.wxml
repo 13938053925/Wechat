@@ -1,0 +1,14 @@
+<!-- 登陆页面 -->
+<view class="myLogin">
+<image src="{{src}}"></image>
+
+<button open-type="getUserInfo" bindgetuserinfo="getMyInfo">{{nickName}}</button>
+</view>
+<!-- 收藏列表 -->
+<view class="myFavorite">
+<text>我的收藏（1）</text>
+ <view class="news-item" wx:for="{{newList}}" wx:key="{{item.id}}" bindtap="goToDetail">
+  <image src="{{item.poster}}"></image>
+  <text>{{item.title}}---{{item.add_date}}</text>
+  </view>
+</view>

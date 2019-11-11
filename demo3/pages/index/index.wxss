@@ -1,0 +1,22 @@
+.contaniner{
+  height: 750rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  align-content: stretch
+}
+.a{
+  height: 100rpx;
+  width: 200rpx;
+  background-color: red;
+}
+.b{
+  height: 100rpx;
+  width: 300rpx;
+  background-color: yellow;
+}
+.c{
+  height: 100rpx;
+  width: 600rpx;
+  background-color: blue;
+}

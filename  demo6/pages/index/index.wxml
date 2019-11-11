@@ -1,0 +1,17 @@
+<!-- 1,幻灯片区域 -->
+<swiper indicator-dots="true" autoplay="true" interval="3000" duration="500">
+<view wx:for="{{swiperImg}}" wx:key="swiper{{index}}">
+<swiper-item>
+<image src="{{item.src}}"></image>
+</swiper-item>
+</view>
+</swiper>
+<!-- 2，新闻列表 -->
+<view class="news-list">
+  <view class="news-item" wx:for="{{newList}}" wx:key="{{item.id}}">
+  <image src="{{item.poster}}"></image>
+  <text>{{item.title}}---{{item.add_date}}</text>
+  
+  </view>
+  <button plain="true">加载更多</button>
+</view>

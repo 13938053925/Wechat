@@ -1,0 +1,36 @@
+.news-list{
+  min-height: 600rpx;
+  padding: 15rpx;
+}
+.news-item{
+  display: flex;
+  flex-direction: column;
+}
+.news-item image{
+  height: 300rpx;
+  width: 100%;
+  margin: 10rpx;
+}
+.news-item text{
+  font-size: 40rpx;
+  width: 100%;
+  line-height: 60rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+button{
+  width: 250rpx;
+  height: 75rpx;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  background-color: rgb(93, 176, 231);
+}
+scroll-view text{
+  font-size: 40rpx;
+}
+button image{
+  height: 80%;
+  width: 25%;
+  margin: 10rpx;
+}
