@@ -1,0 +1,6 @@
+<button bindtap="add">加法</button>
+<button bindtap="getOpenid">获取openid</button>
+<view>
+<button bindtap="shujuku">数据库api获取数据</button>
+<button bindtap="yunhanshu">云函数获取数据</button>
+</view>

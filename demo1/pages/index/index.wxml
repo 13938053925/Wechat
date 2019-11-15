@@ -1,9 +1,12 @@
-<view class='container'>
-<image src='{{src}}'class="abc"></image>
-<text>{{name}}</text>
-<button bindtap="show">显示</button>
-<button bindtap="close">取消</button>
-<button open-type="getUserInfo" bindgetuserinfo="getMyInfo">点击获取头像昵称</button>
-<!--  open-type="getUserInfo" 表示激活获取微信用户信息功能 -->
-<!-- bindgetuserinfo="getMyInfo" 表示获得的数据将传递给自定义函数getMyInfo -->
-</view>
+<input placeholder="输入姓名" bindinput="addName"></input>
+<input placeholder="输入年龄" bindinput="addAge"></input>
+
+<button bindtap="addData">添加数据</button>
+
+<button bindtap="selectData">查询数据</button>
+<input placeholder="填写删除id" bindinput="delDataInput"></input>
+<button bindtap="delData">删除数据</button>
+<input placeholder="更新的id" bindinput="udpDataInput"></input>
+<input placeholder="输入年龄" bindinput="udpAge"></input>
+<button bindtap="udpData">更新数据</button>
+

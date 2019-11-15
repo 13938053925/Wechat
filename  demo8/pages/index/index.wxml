@@ -1,0 +1,15 @@
+<button bindtap="uploadFile">上传文件</button>
+<button bindtap="dowmFile">下载文件</button>
+<button bindtap="upload">上传图片</button>
+<view class="detail">
+ <navigator bindtap="goToDetail">
+ <view class="detail_img">
+ <image src="https://7869-xiaochengxu-h51fa-1300639849.tcb.qcloud.la/images/1573693083491m.png?sign=869871f4c2532a29854dc0d975b818f8&t=1573716782"></image>
+ <text>作者</text>
+ </view>
+
+ </navigator>
+</view>
+<image src="{{imgSrc}}"></image>
+<button bindtap="uploadVideo">上传视频</button>
+<video src="{{videoSrc}}"></video>

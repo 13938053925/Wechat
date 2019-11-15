@@ -1,11 +1,23 @@
-// pages/index/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
+  getData() {
+    let that = this
+    wx.cloud.callFunction({
+      name:'getData',
+      success(res){
+        console.log(res)
+        that.setData({
+          dataList:res.result.data
+        })
+      },
+      fail:console.error
+    })
+  },
   data: {
-
+    dataList: []
   },
 
   /**

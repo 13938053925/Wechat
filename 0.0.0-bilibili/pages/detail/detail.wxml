@@ -1,0 +1,46 @@
+
+<view class="main">
+    <!-- 公共头部 -->
+    <MyTitle></MyTitle>
+    <!-- 视频播放 -->
+    <view class="video_info">
+    <!-- 视频标签 -->
+    <video src="{{videoInfo.videoSrc}}" controls></video>
+    <!-- 视频标题 -->
+    <view class="video_title">
+        <text >{{videoInfo.videoTitle}}</text>
+        <text class="fa fa-angle-down"></text>
+    </view>
+    <!-- 视频详情 -->
+    <view class="video_detail">
+        <!-- 作者 -->
+        <text class="author">{{videoInfo.author}}</text>
+        <!-- 播放量 -->
+        <test class="play_count">{{videoInfo.playCount}}</test>
+        <!-- 评论量 -->
+        <text class="comment_count">{{videoInfo.commentCount}}</text>
+        <!-- 时间 -->
+        <text class="date">{{videoInfo.date}}</text>
+    </view>
+    <!-- 推荐视频 -->
+    <view class="other_list">
+        <navigator wx:for="{{otherList}}" wx:key="{{index}}" class="item_other">
+            <!-- 图片 -->
+            <view class="other_img_wrap">
+                <image src="{{item.imgSrc}}"  mode="widthFix"/>
+            </view>
+            <!-- 视屏详情 -->
+            <view class="other_info">
+                <!-- 标题 -->
+                <view class="other_title">{{item.title}}</view>
+                <!-- 播放量 -->
+                <view class="other_detail">
+                    <text class="paly_count">{{item.playMsg}}</text>
+                    <text class="comment_count">{{item.commentCount}}</text>
+                </view>
+            </view>
+        </navigator>
+
+    </view>
+    </view>
+</view>

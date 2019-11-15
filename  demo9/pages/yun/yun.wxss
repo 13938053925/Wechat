@@ -1,0 +1,5 @@
+
+.itemRoot{
+  background: rgb(102, 102, 102);
+ border: solid 1rpx red;
+}

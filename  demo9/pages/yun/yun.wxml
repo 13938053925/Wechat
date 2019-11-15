@@ -1,0 +1,8 @@
+<button bindtap="getData">获取云端数据库数</button>
+<view wx:for="{{dataList}}" wx:key="{{index}}">
+<view class="itemRoot">
+
+<view>{{item.age}}</view>
+<view>{{item.name}}</view>
+</view>
+</view>
